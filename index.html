@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Economic Term Generator</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+        <style type="text/css">
+            body {
+                background: #eee;
+                color: #444;
+                padding: 20px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 4rem;
+            }
+
+            @media(max-width: 576px) {
+                body {
+                    padding: 5px;
+                }
+                h1 {
+                    font-size: 11vw;
+                }
+            }
+
+            a, .weak {
+                color: #666;
+            }
+
+            a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+            a i {
+                transition: transform 0.1s;
+                vertical-align: baseline;
+            }
+
+            a:hover i.rotate {
+                transform: rotate(40deg);
+            }
+
+            .hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            #url > h4 > a {
+                margin: 0 15px;
+            }
+
+            .footer i {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid d-flex h-100 flex-column">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="javascript:clear()"><h3>economic term generator</h3></a>
+                </div>
+            </div>
+            <div class="row flex-grow-1"></div>
+            <div class="row justify-content-center align-items-end">
+                <div class="col-12">
+                    <h1 id="random-term">
+
+                    </h1>
+                </div>
+                <div class="col-auto">
+                    <a href="javascript:assignNewTerm()" title="New Term"><i class="fas fa-redo-alt fa-3x rotate" style="margin: 60px 0 0 0;"></i></a>
+                </div>
+                <div class="col-auto ml-5" id="showurl">
+                    <a href="javascript:showURL()" title="Share"><i class="fas fa-share-square fa-3x"></i></a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-auto text-muted hidden" style="margin-top: 60px;" id="url">
+                    <h4>
+                        <a href="javascript:hideURL()" title="Hide URL"><i class="fas fa-times"></i></a>
+                        <input readonly/>
+                        <a href="javascript:copyURL()" title="Copy URL"><i class="far fa-copy"></i></a>
+                    </h4>
+                </div>
+            </div>
+            <div class="row flex-grow-1"></div>
+            <div class="row justify-content-center text-muted footer" style="font-size: 1.5em;">
+                <div class="col-auto">
+                    <i class="far fa-copyright"></i>
+                    <span style="vertical-align: text-top">2019</span>
+                </div>
+                <div class="col-auto ml-3">
+                    <a href="https://github.com/crunchyintheory/econ-term-generator" target="_blank"><i class="fab fa-github"></i>&nbsp;crunchyintheory</a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
