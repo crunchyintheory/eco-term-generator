@@ -30,7 +30,16 @@ const terms = [
         'income',
         'worker',
         'job',
-        'marginal'
+        'marginal',
+        'fiscal',
+        'alternative',
+        'progressive',
+        'regressive',
+        'aggregate',
+        'monopolistic',
+        'comparative',
+        'fixed',
+        'variable'
     ],
     [
         'cost',
@@ -47,7 +56,12 @@ const terms = [
         'exchange',
         'income',
         'wage',
-        'utility'
+        'utility',
+        'deficit',
+        'surplus',
+        'monopoly',
+        'equity',
+        'asset'
     ],
     [
         'curve',
@@ -56,7 +70,12 @@ const terms = [
         'per capita',
         'privatization',
         'vouchers',
-        'motive'
+        'motive',
+        'appropriation',
+        'stabilizer',
+        'dividend',
+        'venture',
+        'yield'
     ]
 ];
 
