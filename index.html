@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <title>Economic Term Generator</title>
 
@@ -11,7 +11,6 @@
             body {
                 background: #eee;
                 color: #444;
-                padding: 20px;
             }
 
             h1 {
@@ -20,9 +19,6 @@
             }
 
             @media(max-width: 576px) {
-                body {
-                    padding: 5px;
-                }
                 h1 {
                     font-size: 11vw;
                 }
@@ -58,14 +54,35 @@
             .footer i {
                 vertical-align: middle;
             }
+
+            .header-background {
+                width: 100%;
+                height: 100%;
+                opacity: 0.75;
+                overflow: auto;
+            }
+
+            #site-link {
+                transition: margin 0.4s, padding 0.4s;
+            }
+
+            @media (min-width: 576px) {
+                #site-link:hover {
+                    padding-top: 3rem!important;
+                    margin-bottom: -2rem!important;
+                }
+            }
         </style>
     </head>
     <body>
-        <div class="container-fluid d-flex h-100 flex-column">
+        <div class="container-fluid d-flex h-100 flex-column pb-3">
             <div class="row">
-                <div class="col-auto">
-                    <a href="javascript:clear()"><h3>economic term generator</h3></a>
+                <a href="javascript:clear()" style="z-index: 1; color: #fff;" class="position-relative mx-auto ml-sm-5">
+                <div class="col-auto pt-3 pb-1" id="site-link" style="background-size: cover; background: url();">
+                    <div class="header-background position-absolute" style="background-color: #000; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;"></div>
+                    <h3 class="position-relative" style="z-index: 1;">economic term generator</h3>
                 </div>
+                </a>
             </div>
             <div class="row flex-grow-1"></div>
             <div class="row justify-content-center align-items-end">
@@ -90,13 +107,17 @@
                 </div>
             </div>
             <div class="row flex-grow-1"></div>
-            <div class="row justify-content-center text-muted footer" style="font-size: 1.5em;">
+            <div class="row justify-content-center text-muted footer mb-3" style="font-size: 1.5em;">
                 <div class="col-auto">
-                    <i class="far fa-copyright"></i>
-                    <span style="vertical-align: text-top">2019</span>
+                    <a href="https://github.com/crunchyintheory/eco-term-generator/blob/master/LICENSE" target="_blank" rel="noopener">
+                        <i class="far fa-copyright"></i>
+                        <span style="vertical-align: text-top">2019</span>
+                    </a>
                 </div>
                 <div class="col-auto ml-3">
-                    <a href="https://github.com/crunchyintheory/eco-term-generator" target="_blank"><i class="fab fa-github"></i>&nbsp;crunchyintheory</a>
+                    <a href="https://github.com/crunchyintheory/eco-term-generator" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>&nbsp;crunchyintheory
+                    </a>
                 </div>
             </div>
         </div>
